@@ -1,0 +1,44 @@
+form:
+  validation: loose
+  fields:
+    section:
+        type: section
+        title: Add Special
+
+    title:
+      type: text
+      label: Special Title
+      validate:
+        required: true
+
+    content:
+      type: textarea
+      label: Description
+      validate:
+        type: textarea
+
+
+    data.menu.price:
+      type: text
+      label: Price
+      validate:
+        required: true
+
+    folder:
+      type: hidden
+      default: '/specials/entree/@slugify-title'
+
+    route:
+      type: hidden
+      default: /
+
+    name:
+      type: hidden
+      default: 'person'
+
+    visible:
+      type: hidden
+      default: ''
+
+    blueprint:
+      type: blueprint
